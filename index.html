@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="#">
+
+    <title>Touch the Numbers</title>
+</head>
+
+<body onload="startGame()">
+    <div class="game">
+        <div class = "top">
+            <h1>Touch the Numbers</h1>
+
+            <form>
+                <input type="radio" name="difficulty" onchange="changeBoardSize(2)" /> <span>4</span>
+                <input type="radio" name="difficulty" onchange="changeBoardSize(4)" checked /> <span>16</span>
+                <input type="radio" name="difficulty" onchange="changeBoardSize(5)" /> <span>25</span>
+                <input type="radio" name="difficulty" onchange="changeBoardSize(6)" /> <span>36</span>
+            </form>
+
+            <div class="timer">Time: <span>0</span></div>
+
+        </div>
+        <table class="board">
+            <!-- <tr>
+                <td class="cell_1" cell_value="1">1</td>
+            </tr> -->
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
